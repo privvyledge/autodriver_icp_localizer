@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 
-package_name = 'autodriver_fake_obstacle_publisher'
+package_name = 'autodriver_icp_localizer'
 
 data_files = [
     ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
@@ -62,7 +62,7 @@ setup(
         tests_require=['pytest'],
         entry_points={
             'console_scripts': [
-                'fake_obstacle_publisher = autodriver_fake_obstacle_publisher.fake_obstacle_publisher:main',
+                'icp_localizer = autodriver_icp_localizer.icp_localization_node:main',
             ],
         },
 )
